@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de bootstrap
+    </title>
+</head>
+
+<header>Main champs</header>
+
+<!------------------NavBar------------------->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+
+<!--Background color  -->
+
+      <a class="p-3 mb-2 Navbar text-blue">Navbar</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+    <!------------------ Alert ---------------------------->
+    <div class="alert alert-primary" role="alert">
+        Lo sabia, eres un fan de LoL!
+      </div>
+
+    <div class="toast-container">
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small class="text-muted">just now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      See? Just like this.
+    </div>
+  </div>
+
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small class="text-muted">2 seconds ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Heads up, toasts will stack automatically
+    </div>
+  </div>
+</div>
+
+<!--------------------------- Card ---------------------------------->
+    <div class="card text-center" style="width: 18rem;">
+  <img src="img/jhin.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">JHIN</h5>
+
+<!-- Text center -->
+
+    <p class="text-center">Jhin es un psicópata meticuloso que cree que el asesinato es un arte. Alguna vez un prisionero jonio, pero liberado por elementos sombríos dentro del concejo líder de Jonia, el asesino en serie ahora presta sus servicios como sicario a esa camarilla. Utilizando su arma como un pincel, Jhin crea obras de arte brutales que horrorizan a sus víctimas y testigos. Mostrar sus obras de horripilante drama le causa un placer retorcido, lo que lo convierte en la mejor opción para mandar el más poderoso de los mensajes: el terror.</p>
+    <!-------------------------- Flush Accordion -------------------------------------->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Pagina de runas #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <img src="img/runas1.png" width="10px" height="5px">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Pagina de runas #2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <img src="img/runas2.png" width="10px" height="5px">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Orden de habilidades
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <img src="img/habilidadesjhin.png" width="10px" height="5px">
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!---------------------------------- Grid Card ------------------------------------------->
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/fiddle.jpg" class="card-img-top" alt="...">
+        <!-- Border color -->
+        <div class="border border-danger" >
+          <h5 class="card-title">Fiddlesticks</h5>
+          <p class="card-text">Algo ha despertado en Runaterra. Algo ancestral. Algo terrible. El horror conocido como Fiddlesticks acecha en las lindes de la sociedad, en las zonas en las que impera la paranoia, donde se alimenta de aquellos a los que aterroriza. Armada con una destartalada guadaña, esta criatura cosecha miedo en estado puro y consume las mentes de aquellos desafortunados que consiguen sobrevivir a su encuentro. Temed el graznido del cuervo, el susurro de esa silueta que parece casi humana... Fiddlesticks ha regresado.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Kayn.jpg" class="card-img-top" alt="...">
+
+        <!-- Shadow -->
+        <div class="shadow p-3 mb-5 bg-body rounded">
+          <h5 class="card-title">Kayn</h5>
+          <p class="card-text">Shieda Kayn, un practicante sin par de la mortífera magia sombría, lucha por alcanzar su verdadero destino: llegar a guiar algún día a la Orden de la Sombra hacia una nueva era de supremacía jonia. Empuña la oscura arma viviente Rhaast, impasible ante la progresiva corrupción de su cuerpo y su mente. Solo hay dos desenlaces posibles: o bien Kayn somete al arma a su voluntad... o bien la malévola hoja lo consume por completo, allanando el camino hacia la destrucción de toda Runaterra.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Jax.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+
+<!-- Pointer event  -->
+
+          <h5><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">Jax</a></h5>
+
+
+          <p class="card-text">Incomparable en su habilidad con armas especiales y su mordaz sarcasmo, Jax es el último maestro de armas conocido de Icathia. Después de que su tierra natal fuera devastada por su propia arrogancia al desatar el Vacío, Jax y los suyos juraron proteger lo poco que quedó. Ahora que la magia se asienta en el mundo, esta amenaza durmiente acecha de nuevo y Jax vaga por Valoran con la última luz de Icathia, poniendo a prueba a todos los guerreros con los que se encuentra para saber si hay alguno lo suficientemente fuerte como para combatir a su lado...</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!------------------- Carousel with controls ---------------------------->
+  <div class="carousel-inner" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Mordekaiser.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/Draven.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/Vladimir.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!---------------------- Button Toolbar ----------------------------------------------->
+<footer>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" alain>
+    <div class="btn-group me-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-primary">1</button>
+      <button type="button" class="btn btn-primary">2</button>
+      <button type="button" class="btn btn-primary">3</button>
+      <button type="button" class="btn btn-primary">4</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Second group">
+      <button type="button" class="btn btn-secondary">5</button>
+      <button type="button" class="btn btn-secondary">6</button>
+      <button type="button" class="btn btn-secondary">7</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group">
+      <button type="button" class="btn btn-info">8</button>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
